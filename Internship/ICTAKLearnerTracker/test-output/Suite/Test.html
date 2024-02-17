@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 10 17:46:44 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>328 seconds (328815 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.internship.test.LoginTest.adminLoginInvalidPassword()'><b>adminLoginInvalidPassword</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.adminEditLearner()'><b>adminEditLearner</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>4</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.loginBlankUsernameBlankPassword()'><b>loginBlankUsernameBlankPassword</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.editLearnerDetails()'><b>editLearnerDetails</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.validPlacementOfficerLogin()'><b>validPlacementOfficerLogin</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.editUser()'><b>editUser</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>4</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.adminUpdatePlacementStatus()'><b>adminUpdatePlacementStatus</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.addLearnerBackButton()'><b>addLearnerBackButton</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.trainingHeadLoginInvalidPassword()'><b>trainingHeadLoginInvalidPassword</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.admiCSVCancel()'><b>admiCSVCancel</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.editLearnerDetailsBackButton()'><b>editLearnerDetailsBackButton</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.placementOfficerLoginInvalidPassword()'><b>placementOfficerLoginInvalidPassword</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.adminDeleteLearner()'><b>adminDeleteLearner</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>2</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.adminAddCSV()'><b>adminAddCSV</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.LogoutTest.placementOfficerClickLogout()'><b>placementOfficerClickLogout</b><br>Test class: com.internship.test.LogoutTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LogoutTest@793f29ff</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.deleteUser()'><b>deleteUser</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>2</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.validTrainingHeadLogin()'><b>validTrainingHeadLogin</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.loginInvalidUsernameInvalidPassword()'><b>loginInvalidUsernameInvalidPassword</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.addUser()'><b>addUser</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>4</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.adminAddLearner()'><b>adminAddLearner</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.addLearner()'><b>addLearner</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.PlacementOfficerTest.updatePlacementStatus()'><b>updatePlacementStatus</b><br>Test class: com.internship.test.PlacementOfficerTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.PlacementOfficerTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.trainingHeadLoginInvalidUsername()'><b>trainingHeadLoginInvalidUsername</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.placementOfficerLoginInvalidUsername()'><b>placementOfficerLoginInvalidUsername</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.adminLoginInvalidUsername()'><b>adminLoginInvalidUsername</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+<tr>
+<td title='com.internship.test.AdminTest.adminAddLearnerCancel()'><b>adminAddLearnerCancel</b><br>Test class: com.internship.test.AdminTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.AdminTest@248e319b</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.addLearnerWithInvalidName()'><b>addLearnerWithInvalidName</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>2</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.LogoutTest.adminClickLogout()'><b>adminClickLogout</b><br>Test class: com.internship.test.LogoutTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LogoutTest@793f29ff</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.addcsv()'><b>addcsv</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>2</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.LogoutTest.trainerClickLogout()'><b>trainerClickLogout</b><br>Test class: com.internship.test.LogoutTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.LogoutTest@793f29ff</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.deleteLearnerDetails()'><b>deleteLearnerDetails</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>1</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.addLearnerWithInvalidLearnerid()'><b>addLearnerWithInvalidLearnerid</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>3</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.TrainingHeadTest.cancelcsv()'><b>cancelcsv</b><br>Test class: com.internship.test.TrainingHeadTest</td>
+<td></td>
+<td>2</td>
+<td>com.internship.test.TrainingHeadTest@5d0bf09b</td></tr>
+<tr>
+<td title='com.internship.test.PlacementOfficerTest.updatePlacementStatusBackButton()'><b>updatePlacementStatusBackButton</b><br>Test class: com.internship.test.PlacementOfficerTest</td>
+<td></td>
+<td>4</td>
+<td>com.internship.test.PlacementOfficerTest@3e8c3cb</td></tr>
+<tr>
+<td title='com.internship.test.LoginTest.validAdminLogin()'><b>validAdminLogin</b><br>Test class: com.internship.test.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>com.internship.test.LoginTest@4686afc2</td></tr>
+</table><p>
+</body>
+</html>
